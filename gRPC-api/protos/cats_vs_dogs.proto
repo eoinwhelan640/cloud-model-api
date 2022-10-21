@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package cats_vs_dogs;
+
+message CatsVsDogsRequest {
+    bytes image = 1;
+}
+
+message CatsVsDogsResponse {
+    string cls = 1;
+}
+
+service CatsVsDogsService {
+    rpc CatsVsDogsTensorflowInference(CatsVsDogsRequest) returns (CatsVsDogsResponse);
+    rpc CatsVsDogsPyTorchInference(CatsVsDogsRequest) returns (CatsVsDogsResponse);
+}
