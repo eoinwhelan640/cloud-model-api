@@ -5,7 +5,7 @@ from PIL import Image
 import base64
 
 import tensorflow as tf
-from keras.utils.image_utils import load_img, img_to_array
+from keras.preprocessing.image import img_to_array
 
 import torch
 from torchvision import transforms, models
