@@ -5,7 +5,8 @@ from PIL import Image
 import base64
 
 import tensorflow as tf
-from keras.utils.image_utils import load_img, img_to_array
+# some mix up with versions of keras/tensorflow and torch. Conflicts if not using exact set, so need to use version of keras where funcs are in image_utils
+#from keras.utils.image_utils import load_img, img_to_array 
 
 import torch
 from torchvision import transforms, models
