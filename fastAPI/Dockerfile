@@ -1,9 +1,8 @@
 FROM python:3.8
 
-COPY . .
-
 RUN pip install -r requirements.txt
 
+COPY . .
 # UVICORNs default port to expose
 EXPOSE 8000
 
