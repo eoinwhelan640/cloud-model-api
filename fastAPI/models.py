@@ -6,7 +6,9 @@ import base64
 
 import tensorflow as tf
 # some mix up with versions of keras/tensorflow and torch. Conflicts if not using exact set, so need to use version of keras where funcs are in image_utils
+# If want to use scripts locally, need image_utils or go to effort of installing the required libs
 #from keras.utils.image_utils import load_img, img_to_array 
+from keras.preprocessing.image import img_to_array
 
 import torch
 from torchvision import transforms, models
